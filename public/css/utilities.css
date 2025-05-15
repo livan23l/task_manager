@@ -34,6 +34,19 @@
     font-size: 2rem;
 }
 
+.text-3xl {
+    font-size: 2.5rem;
+}
+
+/* Margin */
+.mt-md {
+    margin-top: 1rem !important;
+}
+
+.mt-lg {
+    margin-top: 1.3rem !important;
+}
+
 /* Buttons */
 .button {
     display: block;
@@ -46,6 +59,13 @@
     text-align: center;
     cursor: pointer;
     transition: scale 0.25s;
+}
+
+.button-rounded {
+    aspect-ratio: 1;
+    padding: 0.2rem;
+    padding-bottom: 0.5rem;
+    border-radius: 50%;
 }
 
 .button-primary {

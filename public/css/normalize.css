@@ -1,20 +1,24 @@
-h1, h2, h3, h4, h5, h6, p, div, article, section, aside, ul, ol, li, header,
-nav, main, footer {
-    margin: 0;
-    padding: 0;
+/* Font */
+@font-face {
+    font-family: 'Dosis';
+    src: url('../font/Dosis-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, p, div, article, section, aside, table, thead, tbody,
-th, tr, ul, ol, li {
+@font-face {
+    font-family: 'Dosis';
+    src: url('../font/Dosis-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, div, article, section, tr, a, li, 
-
-h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-}
-
-p {
-    text-wrap: pretty;
+body {
+    font-family: 'Dosis';
 }

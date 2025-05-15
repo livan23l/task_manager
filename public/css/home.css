@@ -1,0 +1,126 @@
+@import url('normalize.css');
+@import url('utilities.css');
+
+.presentation {
+    min-height: 35rem;
+    height: 100vh;
+    padding-bottom: 6rem;
+    padding-inline: 2rem;
+    background: var(--primary) url('../img/home/hero.webp') no-repeat top center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0.5rem;
+}
+
+.presentation__title {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 16px;
+    background-color: var(--primary-light);
+    box-shadow: 3px 3px 25px black;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.presentation__icon {
+    max-width: 20rem;
+    margin-bottom: 0.5rem;
+    width: 50%;
+}
+
+.about {
+    box-sizing: content-box;
+    height: fit-content;
+    padding: 2rem;
+    padding-bottom: 6rem;
+    background: var(--primary) url('../img/home/checklist.webp') no-repeat center calc(50% - 3rem);
+    background-size: min(50%, 10rem) auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+
+.about__tags {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__pair {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__text {
+    max-width: 15rem;
+    padding-block: 0.75rem;
+    padding-inline: 1rem;
+    border-radius: 16px;
+    background-color: var(--primary-light);
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about__button {
+    font-size: 1.15rem;
+}
+
+.contact {
+    padding: 2rem;
+    background-color: var(--secondary);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact__title {
+    font-size: 2.5rem;
+}
+
+@media (width >= 48rem) {
+    .presentation {
+        height: calc(100vh + 3rem);
+    }
+
+    .presentation__title {
+        font-size: 3rem;
+    }
+
+    .about {
+        height: 50rem;
+        background-position: center 10.2rem;
+        background-size: 20rem auto;
+        gap: 4rem;
+    }
+
+    .about__tags {
+        gap: 5rem;
+    }
+
+    .about__pair {
+        gap: 5rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about__text {
+        font-size: 2.3rem;
+    }
+
+    .about__button {
+        font-size: 1.35rem;
+    }
+}

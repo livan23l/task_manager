@@ -1,0 +1,114 @@
+@import url('variables.css');
+
+/* Text */
+.text-primary {
+    color: var(--primary);
+}
+
+.text-primary-light {
+    color: var(--primary-light);
+}
+
+.text-primary-dark {
+    color: var(--primary-dark);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-lg {
+    font-size: 1.2rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-2xl {
+    font-size: 2rem;
+}
+
+/* Buttons */
+.button {
+    display: block;
+    width: fit-content;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-style: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: scale 0.25s;
+}
+
+.button-primary {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.button-primary:hover {
+    scale: 1.07;
+}
+
+/* Form */
+.form {
+    max-width: 24rem;
+    width: 100%;
+    padding-inline: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.form__input {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.label {
+    padding-left: 0.5rem;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.input, .textarea {
+    appearance: none;
+    outline: none;
+    font-size: 1.15rem;
+}
+
+.input--text, .textarea {
+    padding-block: 0.5rem;
+    padding-inline: 0.75rem;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.textarea {
+    height: 7.5rem;
+    resize: none;
+}
+
+/* Waves */
+.wave {
+    height: 3.5rem;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+.wave-xl {
+    height: 7.5rem;
+}
+
+.wave-bottom {
+    top: auto;
+    bottom: -1px;
+    rotate: 180deg;
+}

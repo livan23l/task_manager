@@ -13,7 +13,21 @@
     <!-- Templates -->
     <template id="template-empty">
         <div class="empty">
-            <div class="mt-lg text-3xl button button-rounded button-primary">+</div>
+            <button id="button-add-task" class="add-button" type="button">+</button>
+        </div>
+    </template>
+
+    <template id="template-task-container">
+        <div class="task-container">
+            <button id="button-add-task" class="add-button add-button--bottom" type="button">+</button>
+        </div>
+    </template>
+
+    <template id="template-task">
+        <div class="task">
+            <h3 class="task__title"></h3>
+            <p class="task__description"></p>
+            <p class="task__date"></p>
         </div>
     </template>
 
@@ -41,6 +55,30 @@
         <section id="principal" class="principal">
         </section>
     </main>
+
+    <div id="backdrop" data-action="show-hide-form" class="backdrop backdrop--hidden"></div>
+
+    <section id="section-task-form" class="generate generate--hidden">
+        <button data-action="show-hide-form" class="generate__close text-md button button--rounded button--secondary">x</button>
+
+        <h2>Formulario para crear tareas</h2>
+
+        <form id="form-task" class="form">
+            <div class="form__input">
+                <label class="label" for="task">Título</label>
+                <input class="input input--text" id="task" name="task" type="text" placeholder="El título de tu tarea" required>
+            </div>
+            <div class="form__input">
+                <label class="label" for="description">Descripción (opcional)</label>
+                <textarea class="textarea" id="description" name="description" placeholder="Una breve descripción"></textarea>
+            </div>
+            <div class="form__input">
+                <label class="label" for="date">Fecha (opcional)</label>
+                <input class="input input--date" id="date" name="date" type="date">
+            </div>
+            <button data-action="show-hide-form" class="text-md mt-md button button--primary" type="submit">Guardar tarea</button>
+        </form>
+    </section>
 
     <script src="public/js/app.js"></script>
 </body>

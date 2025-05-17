@@ -17,9 +17,23 @@
     color: var(--secondary);
 }
 
+
+.text-secondary-light {
+    color: var(--secondary-light);
+}
+
+.text-secondary-dark {
+    color: var(--secondary-dark);
+}
+
+
 .anchor {
     text-decoration: none;
     color: black;
+}
+
+.text-md {
+    font-size: 1rem;
 }
 
 .text-lg {
@@ -61,20 +75,28 @@
     transition: scale 0.25s;
 }
 
-.button-rounded {
-    aspect-ratio: 1;
-    padding: 0.2rem;
-    padding-bottom: 0.5rem;
-    border-radius: 50%;
+.button:hover {
+    scale: 1.07;
 }
 
-.button-primary {
+.button--rounded {
+    aspect-ratio: 1;
+    padding: 0.5em;
+    padding-bottom: 0.70em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--primary {
     background-color: var(--primary-dark);
     color: var(--primary-light);
 }
 
-.button-primary:hover {
-    scale: 1.07;
+.button--secondary {
+    background-color: var(--secondary-dark);
+    color: var(--secondary-light);
 }
 
 /* Form */
@@ -107,11 +129,15 @@
     font-size: 1.15rem;
 }
 
-.input--text, .textarea {
+.input--text, .input--date, .textarea {
     padding-block: 0.5rem;
     padding-inline: 0.75rem;
     border: 1px solid black;
     border-radius: 7px;
+}
+
+.input--date {
+    text-transform: uppercase;
 }
 
 .textarea {
@@ -136,4 +162,19 @@
     top: auto;
     bottom: -1px;
     rotate: 180deg;
+}
+
+/* Others */
+.backdrop {
+    background-color: #00000080;
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    cursor: pointer;
+    transition: opacity 0.33s;
+}
+
+.backdrop--hidden {
+    opacity: 0;
+    visibility: hidden;
 }
